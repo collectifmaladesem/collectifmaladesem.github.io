@@ -64,14 +64,20 @@
 }
 
 
-.notion-collection-gallery.large>.notion-collection-card:hover {
-    transform: translateY(-4px) !important;
+/*.notion-collection-gallery.large>.notion-collection-card:hover {
+    	transform: translateY(-4px) !important;
 	opacity: 0.94 !important;
+}*/
+
+.notion-collection-gallery.large>.notion-collection-card:hover {
+    transform: scale(1.02) !important;
+    opacity: 0.98 !important;
 }
 
 .theme-dark .notion-collection-gallery.large>.notion-collection-card:hover {
 	opacity: 0.8 !important;
 }
+
 
 
 /************************************************/
