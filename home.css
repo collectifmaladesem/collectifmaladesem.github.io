@@ -18,7 +18,7 @@
 
 .theme-light .notion-collection-gallery.large .notion-collection-card
 {
-	background: white !important;
+	background: red !important;
 }
 .theme-dark .notion-collection-gallery.large .notion-collection-card
 {
