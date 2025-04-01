@@ -1,8 +1,10 @@
 :root
 {
 	--layout-max-width: 1100px !important;
-	--padding-left-mobile: 0% !important;
-	--padding-right-mobile: 0% !important;
+	--padding-left-mobile: 2% !important;
+	--padding-right-mobile: 2% !important;
+	--column-spacing: 46px !important; 
+
 	--pink-light: #D81159 !important;
 	--pink-dark: #4A061F !important;
 	--color-bg-default: #D81159 !important;
@@ -14,19 +16,17 @@
 
 }
 
-:root {
-	/* Column Spacing (Spacing between columns) */
-	--column-spacing: 20px !important; 
-}
-
-@media(max-width:860px)
+@media(max-width:1024px)
 {
-	.notion-root
+  :root
+  {
+  	--column-spacing: 20px !important; 
+  }
+  .notion-root
 	{
-		padding-left: 3%;
-		padding-right: 3%;
-	}
-
+		padding-left: var(--padding-left-mobile);
+		padding-right: var(--padding-right-mobile);
+	}	
 }
 
 body
