@@ -1,0 +1,13 @@
+.notion-header {
+	display: none !important; 
+}
+
+:root {
+    --collection-card-cover-size-large: calc(80% - 15px) !important;
+}
+
+.notion-collection-gallery.large>.notion-collection-card {
+    border: 1px solid var(--color-border-default) !important;
+    /*box-shadow: 0 10px 20px -10px rgb(0 0 0 / 12%) !important;*/
+
+}
