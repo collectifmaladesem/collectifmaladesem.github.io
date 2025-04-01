@@ -1,0 +1,24 @@
+.notion-header {
+	display: none !important; 
+}
+
+}
+.notion-collection-gallery.large .notion-collection-card__content
+{
+	background: var(--medium-gallery-background-color) !important;
+	border-radius: 16px 16px 0px 0px !important;
+	color: var(--medium-gallery-text-color) !important;
+	gap: 24px !important;
+	justify-content: space-between !important;
+	padding: 20px !important;
+}
+.notion-collection-gallery.large .notion-property__title
+{
+	font-size: 1.2rem !important;
+	line-height: 2rem !important;
+	max-width: 360px !important;
+}
+.notion-collection-gallery.large .notion-property__text
+{
+	font-size: 1rem !important;
+}
