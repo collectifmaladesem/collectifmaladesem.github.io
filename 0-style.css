@@ -8,6 +8,10 @@
 	--color-bg-default: #D81159 !important;
 	--color-bg-default-dark: #4A061F !important;
 	/*--color-bg-default-dark: #191919 !important;*/
+
+	/* Collection top border (set to 0 to hide) */
+  	--collection-header-border: 0 !important;
+
 }
 
 body
