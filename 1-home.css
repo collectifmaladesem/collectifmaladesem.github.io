@@ -14,14 +14,15 @@
 /*               gallery large                  */
 /************************************************/
 
-
-.theme-light .notion-collection-gallery.large .notion-collection-card
+.notion-collection-gallery.large .notion-collection-card
 {
-	background: white !important;
+	display: flex !important;
+	padding: 5px !important;
+	flex-direction: column-reverse !important;
 }
-.theme-dark .notion-collection-gallery.large .notion-collection-card
+.notion-collection-gallery.large .notion-collection-card__cover
 {
-	background: #191919 !important;
+	border-radius: 0px 0px 6px 6px !important;
 }
 
 .notion-collection-gallery.large .notion-collection-card__content
@@ -29,21 +30,25 @@
 	background: white !important;
 	border-radius: 0px 0px 0px 0px !important;
 	color: white !important;
-	gap: 24px !important;
 	justify-content: space-between !important;
 	align-items: left;
-	padding: 20px !important;
+	padding: 0px !important;
 }
 
 .theme-dark .notion-collection-gallery.large .notion-collection-card__content
 {
 	background: #191919 !important;
 }
+.notion-collection-gallery.large .notion-collection-card__property-list
+{
+  	margin-top: 0px !important;
+	  padding: 20px !important;
+}
 
 .notion-collection-gallery.large .notion-property__title
 {
-	font-size: 1rem !important;
-	line-height: 2rem !important;
+	font-size: rem !important;
+	line-height: 1rem !important;
 	max-width: 360px !important;
 	color: #218380 !important;
 }
@@ -51,23 +56,17 @@
 .notion-collection-gallery.large .notion-property__text
 {
 	font-size: 1.2rem !important;
-	color: black !important;
+	line-height: 1.2rem !important;
+  color: black !important;
 	text-align: left !important;
 	color: #D81159 !important;
 }
 
-.notion-collection-gallery.large .notion-collection-card
+.notion-collection-gallery.large .notion-property__date
 {
-	border-radius: 1px !important;
-	display: flex !important;
-	flex-direction: column-reverse !important;
+	line-height: 1rem !important;
+
 }
-
-
-/*.notion-collection-gallery.large>.notion-collection-card:hover {
-    	transform: translateY(-4px) !important;
-	opacity: 0.94 !important;
-}*/
 
 .notion-collection-gallery.large>.notion-collection-card:hover {
     transform: scale(1.02) !important;
