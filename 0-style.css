@@ -162,10 +162,13 @@ p
 	box-shadow: 0 20px 30px -10px rgb(0,0,0,0.2) !important;
 }
 
+	/*--pink-light: #D81159 !important;
+	--pink-dark: #4A061F !important;*/
+
 /* PINK  : pleine largeur, fond rose foncé, texte blanc et centré */
 .theme-light .notion-callout.bg-pink-light
 {
-	background: var(--pink-light) !important;
+	background: linear-gradient(to left, rgba(74, 6, 31, 0),  rgba(74, 6, 31, 0.6)) !important;
 	color: white !important;
 }
 .theme-dark .notion-callout.bg-pink-light
