@@ -84,15 +84,9 @@
 /*               gallery small                  */
 /************************************************/
 
-.theme-light .notion-collection-gallery.small .notion-collection-card
+.notion-collection-gallery.small .notion-collection-card
 {
-	background: #8F2D56  !important;
-	box-shadow: none !important;
-}
-
-.theme-dark .notion-collection-gallery.small .notion-collection-card
-{
-	background: #310F1D  !important;
+	background: transparent  !important;
 	box-shadow: none !important;
 }
 
