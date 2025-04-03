@@ -10,23 +10,16 @@
 	--color-bg-default: #D81159 !important;
 	--color-bg-default-dark: #4A061F !important;
 	/*--color-bg-default-dark: #191919 !important;*/
-
+  	--primary-font: Helvetica !important;
+  	--secondary-font: Helvetica !important;
 	/* Collection top border (set to 0 to hide) */
   	--collection-header-border: 0 !important;
-
 }
 
-@media(max-width:1024px)
-{
-  :root
-  {
-  	--column-spacing: 20px !important; 
-  }
-  .notion-root
-	{
-		padding-left: var(--padding-left-mobile);
-		padding-right: var(--padding-right-mobile);
-	}	
+body {
+	-webkit-font-smoothing: antialiased !important;
+	-moz-osx-font-smoothing: grayscale !important;
+	text-rendering: optimizeLegibility !important;
 }
 
 body
@@ -45,7 +38,7 @@ body
 }
 
 .super-navbar__logo:hover {
-    opacity: .7 !important;
+    	opacity: .7 !important;
 }
 
 .notion-header
@@ -54,11 +47,11 @@ body
 }
 
 .theme-light .notion-search__input, .notion-search__box {
-    background: white !important;
+    	background: white !important;
 }
 
 .theme-dark .notion-search__input, .notion-search__box {
-    background:  #191919 !important;
+    	background:  #191919 !important;
 }
 
 .notion-page
@@ -75,13 +68,20 @@ body
 
 p
 {
-	line-height: 1.8 !important;
+	line-height: 1.7!important;
+  	padding-bottom: 10px !important;
 }
 
 .notion-list-item
 {
-	line-height: 1.8 !important;
+	line-height: 1.7 !important;
 }
+
+li::marker {
+  	color: var(--color-bg-default);
+}
+
+
 
 /************************************************/
 /*                  SOMMAIRE                     */
@@ -228,36 +228,64 @@ p
 /* RED  : Making a button from a callout
 /* Turn a single line callout block into a button (Entire block is clickable) */
 .notion-callout.bg-red-light:hover {
-    box-shadow: 0 20px 30px -10px rgba(0,0,0,0.5) !important;
+    	box-shadow: 0 20px 30px -10px rgba(0,0,0,0.5) !important;
 }
 
 .notion-callout.bg-red-light {
-    box-shadow: 0 20px 30px -10px rgb(0,0,0,0.2) !important;
-    letter-spacing: -0.4px !important;
-    border-radius: 50px !important;
-    align-items: center !important;
-    width: fit-content !important;
-    min-width: 230px;
-    position: relative !important;
-    font-weight: 600 !important;
-    border: none !important;
-    padding: 10px 20px !important;
+	    box-shadow: 0 20px 30px -10px rgb(0,0,0,0.2) !important;
+	    letter-spacing: -0.4px !important;
+	    border-radius: 50px !important;
+	    align-items: center !important;
+	    width: fit-content !important;
+	    /*min-width: 230px;*/
+	    position: relative !important;
+	    font-weight: 600 !important;
+	    border: none !important;
+	    padding: 10px 20px !important;
 
 }
+.notion-callout.bg-red-light.border {
+	  margin-left: auto !important;
+	  margin-right: auto !important;
+}
 .notion-callout.bg-red-light {
-    background: #FFBC42 !important; /* CHANGE THE BUTTON COLOR HERE */
-    color: black !important;
+	    background: #FFBC42 !important; /* CHANGE THE BUTTON COLOR HERE */
+	    color: black !important;
     
 }
 .notion-callout.bg-red-light .notion-semantic-string .link {
-    padding: 0px !important;
-    display: inline-block !important;
-    white-space: pre !important;
-    font-weight: 600 !important;
-    font-size: 20px;
-    border: none !important;
-    opacity:1 !important;
+	    padding: 0px !important;
+	    display: inline-block !important;
+	    white-space: pre !important;
+	    font-weight: 600 !important;
+	    font-size: 20px;
+	    border: none !important;
+	    opacity:1 !important;
 }
 .notion-callout.bg-red-light .notion-semantic-string .link:hover {
-    border: none !important;
+   	 border: none !important;
+}
+
+@media(max-width:1024px)
+{
+	:root
+	{
+		--column-spacing: 20px !important; 
+	}
+	.notion-root
+	{
+		padding-left: var(--padding-left-mobile);
+		padding-right: var(--padding-right-mobile);
+	}	
+}
+
+@media(max-width:546px)
+{
+  	
+
+	.notion-text__content, .notion-list-item
+	{
+		line-height: 1.5!important;
+		font-size: 1rem !important;
+	}
 }
