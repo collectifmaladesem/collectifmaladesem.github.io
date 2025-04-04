@@ -10,6 +10,7 @@
 	display: none !important;
 }
 
+
 /************************************************/
 /*               gallery large                  */
 /************************************************/
@@ -48,6 +49,8 @@
 .notion-collection-gallery.large .notion-property__title
 {
 	font-size: rem !important;
+	font-weight: 600 !important;
+	letter-spacing: -1px !important;
 	line-height: 1rem !important;
 	max-width: 360px !important;
 	color: #218380 !important;
@@ -56,11 +59,12 @@
 
 .notion-collection-gallery.large .notion-property__text
 {
-	font-size: 1.2rem !important;
-	line-height: 1.2rem !important;
-  	color: black !important;
+	font-size: 1.4rem !important;
+	font-weight: 600 !important;
+	letter-spacing: -1px !important;
+	line-height: 1.8rem !important;
+	color: black !important;
 	text-align: left !important;
-	color: #D81159 !important;
 }
 
 .notion-collection-gallery.large .notion-property__date
@@ -95,8 +99,8 @@
 .notion-collection-gallery.small .notion-property__title
 {
 	color: white!important;
-	font-size: 1.2rem !important;
-	line-height: 1.7rem !important;
+	font-size: 1.07rem !important;
+	line-height: 1.5rem !important;
 	text-align: center !important;
 	padding-top: 15px !important;
   	padding-left: 10px !important;
@@ -129,7 +133,7 @@
 
 
 body {
-    overflow-x: hidden !important;
+    	overflow-x: hidden !important;
 }
 
 
@@ -158,18 +162,18 @@ body {
 .notion-callout.bg-orange-light,
 .notion-callout.bg-brown-light
 {
-    border-radius: 0px !important;
-    width: 100vw !important;
-    max-width: 100vw !important;
-    position: relative !important;
-    margin: 0 !important;
-    margin-left: -50vw !important;
-    left: 50% !important;
-    padding: 50px 0px !important;
-    display: flex !important;
-    justify-content: flex-start !important;
-    flex-direction: column !important;
-    border: 0 !important;
+	border-radius: 0px !important;
+	width: 100vw !important;
+	max-width: 100vw !important;
+	position: relative !important;
+	margin: 0 !important;
+	margin-left: -50vw !important;
+	left: 50% !important;
+	padding: 50px 0px !important;
+	display: flex !important;
+	justify-content: flex-start !important;
+	flex-direction: column !important;
+	border: 0 !important;
 }
 
 .notion-root>.notion-callout.bg-pink-light>.notion-callout__icon,
