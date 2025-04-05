@@ -1,138 +1,124 @@
 :root
 {
+	/* navbar */
+	--navbar-height: 55px;
+	
+	/* Layout */ 
 	--layout-max-width: 1100px !important;
 	--padding-left-mobile: 2% !important;
 	--padding-right-mobile: 2% !important;
 	--column-spacing: 46px !important; 
 
-	--pink-light: #CF0014  !important;
-	--pink-dark: #400008  !important;
-	--color-bg-default: #D81159 !important;
-	--color-bg-default-dark: #4A061F !important;
+	/* Typography */ 
+
+	
 	/*--color-bg-default-dark: #191919 !important;*/
 	--primary-font: Roboto !important;
 	--secondary-font: Roboto !important;
-	/* Collection top border (set to 0 to hide) */
-	--collection-header-border: 0 !important;
 	
+	
+	/* Collection */
+	/* Collection top border (set to 0 to hide) */
+	--collection-header-border: 0 !important;	
+}
+
+html.theme-light {
+	/* Background page */
+	--color-bg-default: var(--color-pink) !important;
+
+	/* Collection card */
+	--color-card-bg: #ededed !important;
+	--color-card-bg-hover: #d9d9d9 !important;
+	
+	/* Pink HSL */
+	--pink-h: 338 !important;
+	--pink-s: 85% !important;
+	--pink-l: 46% !important;
+	--color-bg-pink-light:  hsl(var(--pink-h), var(--pink-s), var(--pink-l))!important;
+
+	/* Red HSL */
+	--red-h: 0 !important;
+	--red-s: 100% !important;
+	--red-l: 48% !important;
+	
+	/* Purple HSL */
+	--purple-h: 0 !important;
+	--purple-s: 3% !important;
+	--purple-l: 28% !important;
+	--color-bg-purple-light:  hsl(var(--purple-h), var(--purple-s), 19%)!important;
+}
+
+html.theme-dark {
+	/* Background page */
+	--color-bg-default: #4A061F	!important;
+	
+	/* Collection card */
+	--color-card-bg: #262626 !important;
+	--color-card-bg-hover: #494949 !important;
+	
+	/* Pink HSL */
+	--pink-h: 338 !important;
+	--pink-s: 85% !important;
+	--pink-l: 46% !important;
+	--color-bg-pink-light:  hsl(var(--pink-h), var(--pink-s), 19%)!important;
+
+	/* Red HSL */
+	--red-h: 0 !important;
+	--red-s: 100% !important;
+	--red-l: 60% !important;
+	
+	/* Purple HSL */
+	--purple-h: 0 !important;
+	--purple-s: 3% !important;
+	--purple-l: 28% !important;
+	--color-bg-purple-light:  hsl(var(--purple-h), var(--purple-s), 19%)!important;
 }
 
 
-@media(max-width:1024px)
-{
-	.super-navbar.bottom-border
-	{
-		border-bottom: none;
-	}
-	.super-navbar__item-list
-	{
-		display: none;
-	}
-	.super-navbar__actions.hide
-	{
-		display: grid;
-	}
-	.super-navbar.balanced,.super-navbar__menu-open
-	{
-		display: flex;
-	}
-	.super-navbar__item
-	{
-		padding: 8px;
-		text-align: left;
-		width: 100%;
-	}
-	.super-navbar__item.active,.super-navbar__item:hover,.super-navbar__list-item:hover,.super-navbar__list:hover,.super-navbar__menu-list .super-navbar__item.active:hover
-	{
-		background: var(--navbar-background-color-hover);
-		opacity: 1;
-	}
-	.super-navbar.hidden,.super-navbar__search.sidebar-search
-	{
-		display: flex;
-	}
-}
-
-@media(max-width:546px) {
-  	.super-navbar__content 
-	{
-    		padding:0 0px!important;
-  	}
-  	.super-navbar
-  	{	
-      		overflow-x: hidden !important;
-  	}
-}
-
-.super-navbar__cta
-{
-	background: var(--pink-light);
-}
+/* --------------------------------------*/
+/* Layout  
+/* --------------------------------------*/
 
 body
 {
 	overflow-x: hidden !important;
 }
+/* .notion-page */
+/* { */
+	/* margin: 0 !important; */
+	/* padding: 8px 5px!important; */
+	/* padding-left: 8px!important; */
+/* } */
+/* .notion-header */
+/* { */
+	/* display: flex !important; */
+/* } */
+/* .notion-page>div */
+/* { */
+	/* padding: 0px!important; */
+/* } */
 
-.theme-light body
-{
-	background: var(--color-bg-default);
-}
-
-.theme-dark body
-{
-	background: var(--color-bg-default-dark);
-}
-
-.super-navbar__logo:hover {
-    	opacity: .85 !important;
-}
-
-.notion-header
-{
-	display: flex !important;
-}
-
-.theme-light .notion-search__input, .notion-search__box {
-    	background: white !important;
-}
-
-.theme-dark .notion-search__input, .notion-search__box {
-    	background:  #191919 !important;
-}
-
-.notion-page
-{
-	margin: 0 !important;
-	padding: 8px 5px!important;
-	padding-left: 8px!important;
-}
-
-.notion-page>div
-{
-	padding: 0px!important;
-}
+/* --------------------------------------*/
+/* Typo                       
+/* --------------------------------------*/
 
 p
 {
-	line-height: 1.7!important;
-  	padding-bottom: 10px !important;
+	line-height: 1.7 !important;
+	padding-bottom: 10px !important;
 }
-
 .notion-list-item
 {
 	line-height: 1.7 !important;
 }
-
 li::marker {
-  	color: var(--color-bg-default);
+  color: var(--color-bg-default) !important;
 }
 
 
-
-/************************************************/
-/*                  SOMMAIRE                     */
-/************************************************/
+/* --------------------------------------*/
+/* table-of-contents          
+/* --------------------------------------*/
 
 .notion-table-of-contents__item .notion-semantic-string:not(.no-border)
 {
@@ -140,23 +126,22 @@ li::marker {
 	text-decoration: none;
 	text-decoration-color: var(--color-text-default-light);
 }
-
 .notion-table-of-contents__item
 {
 	font-size: 0.9rem !important;
 }
 
-/************************************************/
-/*                    TEXT                      */
-/************************************************/
+/* --------------------------------------*/
+/* Text                                 
+/* --------------------------------------*/
 
 /* Texte au format heading 2*/ 
 .notion-text.bg-brown
 {
 	background: transparent !important;
-	font-family: var(--primary-font);
-	font-size: var(--heading2-size);
-	font-weight: var(--heading-weight);
+	font-family: var(--primary-font)!important;
+	font-size: var(--heading2-size)!important;
+	font-weight: var(--heading-weight)!important;
 	letter-spacing: -1px !important;
 	line-height: 1.5 !important;
 	margin-top: 1.8rem;
@@ -166,9 +151,9 @@ li::marker {
 .notion-text.bg-orange
 {
 	background: transparent !important;
-	font-family: var(--primary-font);
-	font-size: var(--heading3-size);
-	font-weight: var(--heading-weight);
+	font-family: var(--primary-font)!important;
+	font-size: var(--heading3-size)!important;
+	font-weight: var(--heading-weight)!important;
 	letter-spacing: -1px !important;
 	line-height: 1.5 !important;
 	margin-top: .75rem;
@@ -178,13 +163,13 @@ li::marker {
 .notion-text.bg-red
 {
 	background: transparent !important;
-	font-weight: var(--heading-weight);
+	font-weight: var(--heading-weight)!important;
 	text-align: center !important;
 }
 
-/************************************************/
-/*                 CALLOUT                      */
-/************************************************/
+/* --------------------------------------*/
+/* Callout                                 
+/* --------------------------------------*/
 
 
 /* JAUNE : fond blanc en mode clair, sans bord */
@@ -193,7 +178,6 @@ li::marker {
 	background: white !important;
 	border: none !important;
 }
-
 
 /* GRIS : transparent avec bord et ombre */
 .theme-light .notion-callout.bg-gray-light
@@ -209,108 +193,62 @@ li::marker {
 	box-shadow: 0 20px 30px -10px rgb(0,0,0,0.2) !important;
 }
 
-	/*--pink-light: #D81159 !important;
-	--pink-dark: #4A061F !important;*/
-
-/* PINK  : pleine largeur, fond rose foncé, texte blanc et centré */
-.theme-light .notion-callout.bg-pink-light
-{
-	background: linear-gradient(to left, rgba(74, 6, 31, 0),  rgba(74, 6, 31, 0.6)) !important;
-	color: white !important;
-}
-.theme-dark .notion-callout.bg-pink-light
-{
-	background: var(--pink-dark) !important;
-	color: white !important;
-}
-
-/* PURPLE  : pleine largeur, fond rose foncé, texte blanc et centré */
-.theme-light .notion-callout.bg-purple-light
-{
-	background: #8F2D56 !important;
-	color: white !important;
-}
-.theme-dark .notion-callout.bg-purple-light
-{
-	background: #310F1D !important;
-	color: white !important;
-}
-
-/* VERT  : pleine largeur, fond rose foncé, texte blanc et centré */
-.theme-light .notion-callout.bg-green-light
-{
-	background: #218380 !important;
-	color: white !important;
-}
-.theme-dark .notion-callout.bg-green-light
-{
-	background: #0B2C2B !important;
-	color: white !important;
-}
-
-/* ORANGE  : pleine largeur, fond rose foncé, texte blanc et centré */
-.theme-light .notion-callout.bg-orange-light
-{
-	background: #FFBC42 !important;
-	color: black !important;
-}
-.theme-dark .notion-callout.bg-orange-light
-{
-	background: #6D4700 !important;
-	color: white !important;
-}
-
-
+/* PINK, PURPLE, GREEN, BROWN - texte blanc et centré */
 .notion-callout.bg-pink-light, 
 .notion-callout.bg-purple-light, 
 .notion-callout.bg-green-light, 
-.notion-callout.bg-orange-light, 
 .notion-callout.bg-brown-light
 {
-	text-align: center;
+	color: white !important;
+	text-align: center!important;
+	border: none !important;
 }
 
-
-
-/* RED  : Making a button from a callout
+/* RED  : Making a CTA button from a callout
 /* Turn a single line callout block into a button (Entire block is clickable) */
 .notion-callout.bg-red-light:hover {
-    	box-shadow: 0 20px 30px -10px rgba(0,0,0,0.5) !important;
+    box-shadow: 0 20px 30px -10px rgba(0,0,0,0.5) !important;
 }
 
 .notion-callout.bg-red-light {
-	box-shadow: 0 20px 30px -10px rgb(0,0,0,0.2) !important;
-	letter-spacing: -0.4px !important;
-	border-radius: 50px !important;
-	align-items: center !important;
-	width: fit-content !important;
-	/*min-width: 230px;*/
-	position: relative !important;
-	font-weight: 600 !important;
-	border: none !important;
-	padding: 10px 20px !important;
+    box-shadow: 0 20px 30px -10px rgb(0,0,0,0.2) !important;
+    letter-spacing: -0.4px !important;
+    border-radius: 50px !important;
+    align-items: center !important;
+    width: fit-content !important;
+    /*min-width: 230px;*/
+    position: relative !important;
+    font-weight: 600 !important;
+    border: none !important;
+    padding: 10px 20px !important;
 
 }
 .notion-callout.bg-red-light.border {
-	margin-left: auto !important;
-	margin-right: auto !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
 }
 .notion-callout.bg-red-light {
-	background: #FFBC42 !important; /* CHANGE THE BUTTON COLOR HERE */
-	color: black !important;   
+    background: #FFBC42 !important; /* CHANGE THE BUTTON COLOR HERE */
+    color: black !important;
+    
 }
 .notion-callout.bg-red-light .notion-semantic-string .link {
-	padding: 0px !important;
-	display: inline-block !important;
-	white-space: pre !important;
-	font-weight: 600 !important;
-	font-size: 20px;
-	border: none !important;
-	opacity:1 !important;
+    padding: 0px !important;
+    display: inline-block !important;
+    white-space: pre !important;
+    font-weight: 600 !important;
+    font-size: 20px;
+    border: none !important;
+    opacity:1 !important;
 }
 .notion-callout.bg-red-light .notion-semantic-string .link:hover {
-    	border: none !important;
+    border: none !important;
 }
+
+
+/* --------------------------------------*/
+/* Responsive                                 
+/* --------------------------------------*/
 
 @media(max-width:1024px)
 {
@@ -320,16 +258,75 @@ li::marker {
 	}
 	.notion-root
 	{
-		padding-left: var(--padding-left-mobile);
-		padding-right: var(--padding-right-mobile);
+		padding-left: var(--padding-left-mobile)!important;
+		padding-right: var(--padding-right-mobile)!important;
 	}	
 }
 
 @media(max-width:546px)
 {
-	.notion-text__content, .notion-list-item
+  .notion-text__content, .notion-list-item
+  {
+  	line-height: 1.5!important;
+    font-size: 1rem !important;
+  }
+}
+
+/* --------------------------------------*/
+/* Navbar      
+/* --------------------------------------*/
+
+@media(max-width:1024px)
+{
+	.super-navbar.bottom-border
 	{
-		line-height: 1.5!important;
-		font-size: 1rem !important;
+		border-bottom: none!important;
 	}
+	.super-navbar__item-list
+	{
+		display: none!important;
+	}
+	.super-navbar__actions.hide
+	{
+		display: grid!important;
+	}
+	.super-navbar.balanced,.super-navbar__menu-open
+	{
+		display: flex!important;
+	}
+	.super-navbar__item
+	{
+		padding: 8px!important;
+		text-align: left!important;
+		width: 100%!important;
+	}
+	.super-navbar__item.active,.super-navbar__item:hover,.super-navbar__list-item:hover,.super-navbar__list:hover,.super-navbar__menu-list .super-navbar__item.active:hover
+	{
+		background: var(--navbar-background-color-hover)!important;
+		opacity: 1!important;
+	}
+	.super-navbar.hidden,.super-navbar__search.sidebar-search
+	{
+		display: flex!important;
+	}
+}
+
+@media(max-width:546px) {
+  .super-navbar__content {
+    padding:0 0px!important;
+  }
+  /* to fix issue width crowded Navbar on mobile */ 
+  .super-navbar__logo-image{
+    width: 100px!important;
+  }
+}
+
+.super-navbar__cta
+{
+	background: var(--color-bg-pink-light)!important;
+	color: white!important;
+}
+
+.super-navbar__logo:hover {
+    opacity: .85 !important;
 }
