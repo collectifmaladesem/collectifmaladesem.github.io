@@ -7,7 +7,7 @@
 	--layout-max-width: 1100px !important;
 	--padding-left-mobile: 2% !important;
 	--padding-right-mobile: 2% !important;
-	--column-spacing: 46px !important; 
+	--column-spacing: 30px !important; 
 
 	/* Typography */ 
 
@@ -20,6 +20,9 @@
 	/* Collection */
 	/* Collection top border (set to 0 to hide) */
 	--collection-header-border: 0 !important;	
+	
+	/* Pink global (= pink light) */
+	--pink-global: hsl(338, 85%, 46%)!important;
 }
 
 html.theme-light {
@@ -37,9 +40,9 @@ html.theme-light {
 	--color-bg-pink-light:  hsl(var(--pink-h), var(--pink-s), var(--pink-l))!important;
 
 	/* Red HSL */
-	--red-h: 0 !important;
-	--red-s: 100% !important;
-	--red-l: 48% !important;
+	--red-h: 338 !important;
+	--red-s: 85% !important;
+	--red-l: 46% !important;
 	
 	/* Purple HSL */
 	--purple-h: 0 !important;
@@ -63,9 +66,9 @@ html.theme-dark {
 	--color-bg-pink-light:  hsl(var(--pink-h), var(--pink-s), 19%)!important;
 
 	/* Red HSL */
-	--red-h: 0 !important;
-	--red-s: 100% !important;
-	--red-l: 60% !important;
+	--red-h: 338 !important;
+	--red-s: 85% !important;
+	--red-l: 46% !important;
 	
 	/* Purple HSL */
 	--purple-h: 0 !important;
@@ -97,6 +100,13 @@ body
 /* { */
 	/* padding: 0px!important; */
 /* } */
+
+
+.notion-image img
+{
+  width: 100% !important;
+}
+
 
 /* --------------------------------------*/
 /* Typo                       
@@ -204,48 +214,6 @@ li::marker {
 	border: none !important;
 }
 
-/* RED  : Making a CTA button from a callout
-/* Turn a single line callout block into a button (Entire block is clickable) */
-.notion-callout.bg-red-light:hover {
-    box-shadow: 0 20px 30px -10px rgba(0,0,0,0.5) !important;
-}
-
-.notion-callout.bg-red-light {
-    box-shadow: 0 20px 30px -10px rgb(0,0,0,0.2) !important;
-    letter-spacing: -0.4px !important;
-    border-radius: 50px !important;
-    align-items: center !important;
-    width: fit-content !important;
-    /*min-width: 230px;*/
-    position: relative !important;
-    font-weight: 600 !important;
-    border: none !important;
-    padding: 10px 20px !important;
-
-}
-.notion-callout.bg-red-light.border {
-  margin-left: auto !important;
-  margin-right: auto !important;
-}
-.notion-callout.bg-red-light {
-    background: #FFBC42 !important; /* CHANGE THE BUTTON COLOR HERE */
-    color: black !important;
-    
-}
-.notion-callout.bg-red-light .notion-semantic-string .link {
-    padding: 0px !important;
-    display: inline-block !important;
-    white-space: pre !important;
-    font-weight: 600 !important;
-    font-size: 20px;
-    border: none !important;
-    opacity:1 !important;
-}
-.notion-callout.bg-red-light .notion-semantic-string .link:hover {
-    border: none !important;
-}
-
-
 /* --------------------------------------*/
 /* Responsive                                 
 /* --------------------------------------*/
@@ -254,7 +222,7 @@ li::marker {
 {
 	:root
 	{
-		--column-spacing: 20px !important; 
+		--column-spacing: 15px !important; 
 	}
 	.notion-root
 	{
@@ -276,9 +244,18 @@ li::marker {
 /* Navbar      
 /* --------------------------------------*/
 
+.super-content-wrapper
+{
+  padding-top: 20px;
+}
+
 @media(max-width:1024px)
 {
-	.super-navbar.bottom-border
+   .super-content-wrapper
+  {
+    padding-top: 10px;
+  }
+  .super-navbar.bottom-border
 	{
 		border-bottom: none!important;
 	}
@@ -312,9 +289,13 @@ li::marker {
 }
 
 @media(max-width:546px) {
-  .super-navbar__content {
-    padding:0 0px!important;
+   .super-content-wrapper
+  {
+    padding-top: 0px;
   }
+  /*.super-navbar__content {
+    padding:0 0px!important;
+  }*/
   /* to fix issue width crowded Navbar on mobile */ 
   .super-navbar__logo-image{
     width: 100px!important;
@@ -323,10 +304,28 @@ li::marker {
 
 .super-navbar__cta
 {
-	background: var(--color-bg-pink-light)!important;
+	background: var(--pink-global)!important;
 	color: white!important;
 }
 
 .super-navbar__logo:hover {
     opacity: .85 !important;
+}
+
+/* --------------------------------------*/
+/* Button CTA      
+/* --------------------------------------*/
+
+.notion-button__content
+{
+  background: #F49F0A !important;
+  color: black! important;
+  border: none !important;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.notion-button__content:hover
+{
+  transform: scale(1.02) !important;
 }
