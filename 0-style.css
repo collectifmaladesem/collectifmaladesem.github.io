@@ -183,7 +183,10 @@ li::marker {
 
 
 /* JAUNE : fond blanc en mode clair, sans bord */
-.theme-light .notion-callout.bg-yellow-light
+.notion-callout.bg-yellow-light {
+	margin-top: 20px;
+}
+  .theme-light .notion-callout.bg-yellow-light
 {
 	background: white !important;
 	border: none !important;
@@ -203,6 +206,31 @@ li::marker {
 	box-shadow: 0 20px 30px -10px rgb(0,0,0,0.2) !important;
 }
 
+/* BLUE : navigation articles précédents, sommaire, suivant*/
+.notion-callout.bg-blue-light
+{
+	background: transparent !important;
+	border: none !important;
+	text-align: center!important;
+	border: none !important;
+	box-shadow: none !important;
+	.notion-link
+	{
+		text-decoration: none;
+	}
+	.notion-text__content {
+		padding-top: 10px;
+	}
+	.notion-column
+	{
+		padding: 0;
+	}
+	.notion-divider {
+		margin: 0 !important;
+	}
+}
+
+
 /* PINK, PURPLE, GREEN, BROWN - texte blanc et centré */
 .notion-callout.bg-pink-light, 
 .notion-callout.bg-purple-light, 
@@ -213,6 +241,7 @@ li::marker {
 	text-align: center!important;
 	border: none !important;
 }
+
 
 /* --------------------------------------*/
 /* Responsive                                 
@@ -229,6 +258,9 @@ li::marker {
 		padding-left: var(--padding-left-mobile)!important;
 		padding-right: var(--padding-right-mobile)!important;
 	}	
+	.notion-callout.bg-yellow-light {
+		margin-top: 10px;
+  }
 }
 
 @media(max-width:546px)
@@ -238,6 +270,9 @@ li::marker {
 		line-height: 1.5!important;
 		font-size: 1rem !important;
 	}
+	.notion-callout.bg-yellow-light {
+		margin-top: 5px;
+  }
 }
 
 /* --------------------------------------*/
@@ -246,15 +281,15 @@ li::marker {
 
 .super-content-wrapper
 {
-  	padding-top: 20px;
+/*  	padding-top: 20px;*/
 }
 
 @media(max-width:1024px)
 {
-   	.super-content-wrapper
-  	{
-    		padding-top: 10px;
- 	 }
+ 	.super-content-wrapper
+	{
+    /*	padding-top: 10px;*/
+  	}
   	.super-navbar.bottom-border
 	{
 		border-bottom: none!important;
@@ -288,10 +323,11 @@ li::marker {
 	}
 }
 
+
 @media(max-width:546px) {
 	.super-content-wrapper
 	{
-		padding-top: 0px;
+		/*padding-top: 0px;*/
 	}
 	/*.super-navbar__content {
 	padding:0 0px!important;
@@ -351,3 +387,4 @@ li::marker {
 .super-footer.corners.has-list .super-footer__links, .super-footer.floating.has-list .super-footer__links {
 	grid-template-columns: repeat(auto-fill,minmax(min(200px,100%),1fr)) !important;
 }
+
