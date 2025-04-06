@@ -6,17 +6,19 @@
 }
 
 body {
-    overflow-x: hidden !important;
+	overflow-x: hidden !important;
 }
 .super-content-wrapper
 {
-  padding-top: 0px;
+  	padding-top: 0px;
 }
 .notion-header
 {
 	display: none !important;
 }
-
+.notion-root.has-footer {
+  	padding-bottom: 0px;
+}
 
 /* --------------------------------------*/
 /* Gallery large             
@@ -117,7 +119,7 @@ body {
 	line-height: 1.5rem !important;
 	text-align: center !important;
 	padding-top: 0px !important;
-  padding-left: 10px !important;
+  	padding-left: 10px !important;
 	padding-right: 10px !important;
 
 }
@@ -154,7 +156,7 @@ body {
 
 .notion-callout.bg-brown-light
 {
-  background: radial-gradient(circle, rgba(0,0,0,0.834407090472908) 33%, rgba(0,0,0,0.6411297795485382) 66%, rgba(0,0,0,0) 100%), url('https://www.mecfs.de/wp-content/uploads/2024/09/Fotocredits_Reinhard_Balzer_I_Deutsche_Gesellschaft_fuer_ME-CFS_5-scaled.jpg') no-repeat;
+  	background: radial-gradient(circle, rgba(0,0,0,0.834407090472908) 33%, rgba(0,0,0,0.6411297795485382) 66%, rgba(0,0,0,0) 100%), url('https://www.mecfs.de/wp-content/uploads/2024/09/Fotocredits_Reinhard_Balzer_I_Deutsche_Gesellschaft_fuer_ME-CFS_5-scaled.jpg') no-repeat;
 	color: white !important;
 	background-position: left !important;
   	background-size: cover;	
@@ -171,18 +173,18 @@ body {
 .notion-callout.bg-orange-light,
 .notion-callout.bg-brown-light
 {
-    border-radius: 0px !important;
-    width: 100vw !important;
-    max-width: 100vw !important;
-    position: relative !important;
-    margin: 0 !important;
-    margin-left: -50vw !important;
-    left: 50% !important;
-    padding: 50px 0px !important;
-    display: flex !important;
-    justify-content: flex-start !important;
-    flex-direction: column !important;
-    border: 0 !important;
+	border-radius: 0px !important;
+	width: 100vw !important;
+	max-width: 100vw !important;
+	position: relative !important;
+	margin: 0 !important;
+	margin-left: -50vw !important;
+	left: 50% !important;
+	padding: 50px 0px !important;
+	display: flex !important;
+	justify-content: flex-start !important;
+	flex-direction: column !important;
+	border: 0 !important;
 }
 
 .notion-root>.notion-callout.bg-pink-light>.notion-callout__icon,
