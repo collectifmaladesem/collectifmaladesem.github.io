@@ -191,7 +191,11 @@ li::marker {
 	background: white !important;
 	border: none !important;
 }
-
+.theme-dark .notion-callout.bg-yellow-light
+{
+	background: var(--navbar-background-color) !important;
+	border: none !important;
+}
 /* GRIS : transparent avec bord et ombre */
 .theme-light .notion-callout.bg-gray-light
 {
