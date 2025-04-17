@@ -121,7 +121,7 @@ body
 
 .notion-image img
 {
-  width: 100% !important;
+	width: 100% !important;
 }
 
 
@@ -162,7 +162,7 @@ li::marker {
 /* Text                                 
 /* --------------------------------------*/
 
-/* Texte au format heading 2*/ 
+/* Text bg brown :  au format heading 2*/ 
 .notion-text.bg-brown
 {
 	background: transparent !important;
@@ -174,7 +174,7 @@ li::marker {
 	margin-top: 1.8rem;
 }
 
-/* Texte au format heading 3*/ 
+/* Text bg orange : au format heading 3*/ 
 .notion-text.bg-orange
 {
 	background: transparent !important;
@@ -186,13 +186,27 @@ li::marker {
 	margin-top: .75rem;
 }
 
-/* Texte centré et gras*/ 
+/* Texte bg red : centré et gras*/ 
 .notion-text.bg-red
 {
 	background: transparent !important;
 	font-weight: var(--heading-weight)!important;
 	text-align: center !important;
 }
+
+/* Texte bg blue : "Publié le..."*/
+.notion-text.bg-blue
+{
+	background: transparent !important;
+	font-size: 0.8rem!important;
+	color: var(--color-text-default-light);
+}
+
+.notion-text.bg-blue.notion-semantic-string .notion-at
+{
+	display: none;
+}
+
 
 /* --------------------------------------*/
 /* Callout                                 
@@ -374,7 +388,7 @@ li::marker {
 }
 
 .super-navbar__logo:hover {
-  transform: scale(1.02) !important;
+	transform: scale(1.02) !important;
 }
 
 /* --------------------------------------*/
@@ -419,6 +433,7 @@ li::marker {
 }
 
 
+
 /* --------------------------------------*/
 /* Password  
 /* --------------------------------------*/
@@ -440,3 +455,4 @@ li::marker {
 	margin: 5px 5px 5px 10px;
 	align-self: center;  
 }
+
