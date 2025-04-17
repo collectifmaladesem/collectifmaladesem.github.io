@@ -3,7 +3,7 @@
 /* --------------------------------------*/
 
 .notion-collection-gallery.large{
-  grid-template-columns: 1fr;
+	grid-template-columns: 1fr;
 }
 .notion-collection-gallery.large .notion-collection-card__property-list
 {
@@ -26,10 +26,11 @@
 	padding-top:20px;
 }
 
-.notion-collection-gallery.large  .notion-collection-card__property-list:after {
-  position: absolute !important;
-  right: 0 !important;
-  bottom: 0 !important;
+.notion-collection-gallery.large  .notion-collection-card__property-list:after
+{
+  	position: absolute !important;
+  	right: 0 !important;
+  	bottom: 0 !important;
 	width: 30px;
 	speak: none;
 	font-family: Consolas;
@@ -37,5 +38,5 @@
 	text-align: center;
 	content: ">";
 	font-size: 30px;
-  padding:10px !important;
+  	padding:10px !important;
 }
