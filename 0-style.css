@@ -258,10 +258,9 @@ li::marker {
 }
 
 
-/* PINK, PURPLE, GREEN, BROWN - texte blanc et centré */
+/* PINK, PURPLE, BROWN - texte blanc et centré */
 .notion-callout.bg-pink-light, 
 .notion-callout.bg-purple-light, 
-.notion-callout.bg-green-light, 
 .notion-callout.bg-brown-light
 {
 	color: white !important;
@@ -269,6 +268,12 @@ li::marker {
 	border: none !important;
 }
 
+/*  GREEN - texte centré */
+.notion-callout.bg-green-light
+{
+	text-align: center!important;
+	border: none !important;
+}
 
 /* --------------------------------------*/
 /* Responsive                                 
