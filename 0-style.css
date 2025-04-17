@@ -49,6 +49,15 @@ html.theme-light {
 	--purple-s: 3% !important;
 	--purple-l: 28% !important;
 	--color-bg-purple-light:  hsl(var(--purple-h), var(--purple-s), 19%)!important;
+
+  
+	/* --------------------------------------*/
+	/* yellow / Light  
+	/* --------------------------------------*/
+	--yellow-h: 38!important;
+	--yellow-s: 62%!important;
+	--yellow-l: 49%!important;
+	--color-bg-yellow: white!important;
 }
 
 html.theme-dark {
@@ -75,6 +84,14 @@ html.theme-dark {
 	--purple-s: 3% !important;
 	--purple-l: 28% !important;
 	--color-bg-purple-light:  hsl(var(--purple-h), var(--purple-s), 19%)!important;
+
+	/* --------------------------------------*/
+	/* yellow / Dark  
+	/* --------------------------------------*/
+	--yellow-h: 38!important;
+	--yellow-s: 43%!important;
+	--yellow-l: 50%!important;
+	--color-bg-yellow: hsl( var(--yellow-h), calc(var(--yellow-s) - 24%), 13% )!important;
 }
 
 
@@ -185,10 +202,6 @@ li::marker {
 /* JAUNE : fond blanc en mode clair, sans bord */
 .notion-callout.bg-yellow-light {
 	margin-top: 20px;
-}
-.notion-callout.bg-yellow-light
-{
-	background: var(--navbar-background-color) !important;
 	border: none !important;
 }
 
@@ -273,6 +286,9 @@ li::marker {
 	.notion-callout.bg-yellow-light {
 		margin-top: 5px;
   }
+  .notion-column {
+    padding:0px 0!important;
+  }
 }
 
 /* background gallery view-picker */
@@ -340,7 +356,7 @@ li::marker {
 @media(max-width:546px) {
 	.super-content-wrapper
 	{
-		/*padding-top: 0px;*/
+		padding-top:5px;
 	}
 	/*.super-navbar__content {
 	padding:0 0px!important;
@@ -380,7 +396,8 @@ li::marker {
 }
 
 
-.super-footer__list-heading {
+.super-footer__list-heading 
+{
   	color: var(--pink-global);
 	font-weight: 700 !important;
 }
@@ -401,3 +418,25 @@ li::marker {
 	grid-template-columns: repeat(auto-fill,minmax(min(200px,100%),1fr)) !important;
 }
 
+
+/* --------------------------------------*/
+/* Password  
+/* --------------------------------------*/
+.super-password-protection__input,
+.super-password-protection__input input 
+{
+	background: var(--color-card-bg)!important;
+}
+
+.super-password-protection__title:after
+{
+	speak: none;
+	font-family: var(--primary-font);
+	color: var(color-text-default);
+	font-weight:var(--text-weight);
+	text-align: center;
+	content: "\AL'adhésion à l'association est nécessaire pour accéder à cette page";
+	font-size: 1rem;
+	margin: 5px 5px 5px 10px;
+	align-self: center;  
+}
