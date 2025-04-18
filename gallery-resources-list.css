@@ -16,7 +16,7 @@
 	font-size: 1.2rem !important;
 	font-weight: 600 !important;
 	line-height: 1.5rem !important;
-	color: var(--color-bg-pink-light) !important;
+	color: var(--pink-global) !important;
 }
 
 .notion-collection-gallery.large .notion-property__text
