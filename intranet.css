@@ -1,0 +1,40 @@
+/*.notion-header {
+/*	display: none !important; 
+/*}*/
+
+.notion-page
+{
+  display: inline flex;
+}
+html.theme-light, html.theme-dark
+{
+	--layout-max-width: 900px !important;
+  --header-cover-height: 45vh!important;
+  --padding-right-mobile: calc(env(safe-area-inset-right) + 24px)!important;
+  --padding-left-mobile: calc(env(safe-area-inset-left) + 24px)!important;
+}
+
+html.theme-light {
+  /* Background page */
+  --color-bg-default: #f0f0f0 !important;
+
+	/* Collection card */
+	--color-card-bg: #ededed !important;
+	--color-card-bg-hover: #d9d9d9 !important;
+}
+
+html.theme-dark {
+  /* Background page */
+  --color-bg-default: #191919!important;
+	
+	/* Collection card */
+	--color-card-bg: #262626 !important;
+	--color-card-bg-hover: #494949 !important;
+}
+
+.notion-header__cover {
+  overflow: hidden;
+  position: relative;
+  height: var(--header-cover-height);
+  max-height: calc(100vh - var(--navbar-height));
+}
