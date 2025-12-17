@@ -1,10 +1,14 @@
+
 /* --------------------------------------*/
 /* Gallery large             
 /* --------------------------------------*/
 
-.notion-collection-gallery.large{
-	grid-template-columns: 1fr;
+.notion-collection-gallery.large
+{
+	grid-template-columns: 1fr !important;
+	border-left: orange !important;
 }
+
 .notion-collection-gallery.large .notion-collection-card__property-list
 {
   	margin-top: 0px !important;
@@ -34,9 +38,9 @@
 	width: 30px;
 	speak: none;
 	font-family: Consolas;
-	color: var(--color-bg-pink-light) ;
+	color: var(--pink-global) ;
 	text-align: center;
-	content: ">";
+	content: "➥";
 	font-size: 30px;
   	padding:10px !important;
 }
