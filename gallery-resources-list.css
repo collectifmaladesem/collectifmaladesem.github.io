@@ -6,7 +6,16 @@
 .notion-collection-gallery.large
 {
 	grid-template-columns: 1fr !important;
-	border-left: orange !important;
+}
+
+.notion-collection__header-wrapper {
+  display: none!important;
+}
+
+.notion-collection-gallery.large .notion-collection-card 
+{
+	border-left: 8px solid;
+	border-color: var(--pink-global) !important;
 }
 
 .notion-collection-gallery.large .notion-collection-card__property-list
