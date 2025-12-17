@@ -51,5 +51,6 @@
 	text-align: center;
 	content: "➥";
 	font-size: 30px;
-  	padding:10px !important;
+	padding-right:10px !important;
+  	padding-bottom: 0px !important;
 }
